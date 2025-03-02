@@ -3,75 +3,59 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    background: #0f0f0f;
+    color: #fff;
     text-align: center;
-    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     padding: 20px;
 }
 
-/* Main container */
 .container {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: auto;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
 }
 
-/* Typography */
 h1 {
-    color: #333;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: 600;
 }
 
 p {
-    color: #666;
     font-size: 1.2rem;
+    color: #bbb;
     margin-top: 10px;
 }
 
-/* Footer */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #3a3aff;
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #2a2aff;
+    transform: scale(1.05);
+}
+
 footer {
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 0.9rem;
     color: #777;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-        padding: 15px;
-    }
-    
-    h1 {
-        font-size: 1.5rem;
-    }
-    
-    p {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        padding: 10px;
-    }
-    
-    .container {
-        width: 95%;
-        padding: 10px;
-    }
-
-    h1 {
-        font-size: 1.3rem;
-    }
-
-    p {
-        font-size: 0.9rem;
-    }
 }
